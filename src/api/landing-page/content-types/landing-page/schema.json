@@ -1,0 +1,74 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "Landing Page",
+    "description": "Main landing page content model"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.hero",
+      "required": true
+    },
+    "featuresHeading": {
+      "type": "string",
+      "required": true
+    },
+    "featuresDescription": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.feature-card"
+    },
+    "integrationsHeading": {
+      "type": "string"
+    },
+    "integrationsDescription": {
+      "type": "text"
+    },
+    "integrations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.integration-item"
+    },
+    "showcaseHeading": {
+      "type": "string"
+    },
+    "showcaseDescription": {
+      "type": "text"
+    },
+    "showcaseItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.showcase-item"
+    },
+    "joinTeam": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.join-team"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "socialImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
